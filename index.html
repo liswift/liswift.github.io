@@ -12,15 +12,16 @@
     <br/>
     <h>deploying...</h>
 </div>
-<iframe id="swipe-iframe" class="swipe" src="/static/swipedelete.html" width="100%" height="200px"></iframe>
+<div id="swipe-iframe-btn" class="swipe-iframe-btn"></div>
+<iframe id="swipe-iframe" class="swipe-iframe" src="/static/swipedelete.html" width="100%" height="200px"></iframe>
 
 <script src="/scripts/sea-modules/seajs/seajs/2.2.3/sea.js"></script>
 <script src="/scripts/sea-modules/sea-config.js"></script>
 <script>
     seajs.use(['jquery'],function($){
 
-        $("#swipe-iframe").click(function(){
-            $(this).toggleClass("focus");
+        $("#swipe-iframe-btn").click(function(){
+            $("#swipe-iframe").toggleClass("focus");
         });
     });
 </script>

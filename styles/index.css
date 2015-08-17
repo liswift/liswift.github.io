@@ -5,25 +5,31 @@ html,body{
 }
 iframe{
     border: 0;
-    height: 100%;
     position: fixed;
     width: 50px;
     height: 50px;
-    opacity: 0.6;
+    opacity: 0;
     z-index: -1;
     transition:all 0.3s ease;
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
 }
-iframe.swipe{
+iframe.swipe-iframe{
     bottom: 0;
     left: 50%;
     margin-left: -25px;
 }
-iframe.swipe.focus{
+iframe.swipe-iframe.focus{
     z-index: 10;
     opacity: 1;
     width: 100%;
     height: 100%;
+}
+.swipe-iframe-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background: #ac7cff;
 }
