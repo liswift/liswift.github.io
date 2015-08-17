@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css" afterPath="$PROJECT_DIR$/styles/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="" />
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="52" selection-start="846" selection-end="846" vertical-scroll-proportion="0.4229885" vertical-offset="0" max-vertical-offset="870">
+            <state line="18" column="43" selection-start="705" selection-end="705" vertical-scroll-proportion="0.33103448" vertical-offset="0" max-vertical-offset="870">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -293,7 +290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="846" selection-end="846" vertical-scroll-proportion="0.4229885" vertical-offset="0" max-vertical-offset="870">
+        <state line="18" column="43" selection-start="705" selection-end="705" vertical-scroll-proportion="0.33103448" vertical-offset="0" max-vertical-offset="870">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
