@@ -26,7 +26,7 @@
         mySeaJsAlias[alias] = tempAlias[alias];
     }
     seajs.config({
-        base: "../scripts/sea-modules",
+        base: "/scripts/sea-modules",
         alias: mySeaJsAlias,
         debug:true
     });
