@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html,body{
+            height: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+        div{
+            box-sizing: border-box;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            /*-webkit-perspective: 1000;*/
+            /*perspective: 1000;*/
+        }
+        #wrap{
+            height: 30%;
+            /*padding-top:10%;*/
+            border: 1px solid red;
+            overflow:hidden;
+            position: relative;
+        }
+        #content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2000px;
+            height: 100%;
+        }
+        .item{
+            width: 373px;
+            height: 100%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="content">
+        <div class="item" style="background-color: #eeb444"></div>
+        <div class="item" style="background-color: #41eeaa"></div>
+        <div class="item" style="background-color: #59202a"></div>
+        <div class="item" style="background-color: #827e20"></div>
+        <div class="item" style="background-color: #be72bb"></div>
+    </div>
+</div>
+<button id="btn">addd</button>
+
+<script src="../scripts/sea-modules/seajs/seajs/2.2.3/sea.js"></script>
+<script src="../scripts/sea-modules/sea-config.js"></script>
+<script>
+    seajs.use(['zepto',"picSlider"],function($,picSlider){
+        window.ulAnim = new picSlider({
+            trigger:"#content",
+            touchElement:"#wrap",
+            useTransform:true,
+            scrollDirect:"x",
+            scrollType:"block",
+            itemFocusHeight:373,
+            itemWrapHeight:373*5
+        });
+
+
+        var txt = '紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。\
+        紧邻地铁9号线步行5分钟，周边小区建设银行，小区健身 房，小区超市应有尽有，出小区西门步行约15分钟到欧尚 超市，肯德基，生活十分便捷。';
+        $("#btn").tap(function(){
+            $("#content").append(txt);
+            ulAnim.setItemNewWH($("#content").height(),$("#wrap").height());
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="haha"></div>
+<div class="hehe"></div>
+<div class="hehe"></div>
+<div class="hehe"></div>
+
+<script>
+    (function(window,document){
+        var jQuery = function(selector){
+            return new jQuery.init(selector);
+        }
+        jQuery.extend = function(target,obj,deep){
+            var i = 0,
+                key,
+                type = window.Object.prototype.toString.call(obj);
+            if(/Object/.test(type)){
+                if(deep){
+                    for(key in obj){
+                        target[key] = obj[key];
+                    }
+                }
+                else{
+                    for(key in obj){
+                        if(!target.hasOwnProperty(key)){
+                            target[key] = obj[key] ;
+                        }
+                    }
+                }
+            }
+            else if(/Array|NodeList/.test(type)){
+                var len = obj.length;
+                if(deep){
+                    for(;i<len;i++){
+                        target[i] = obj[i];
+                    }
+                }
+                else{
+                    for(;i<len;i++){
+                        if(!target.hasOwnProperty(i+"")){
+                            target[i] = obj[i] ;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        jQuery.init = function(selector){
+            var doms = document.querySelectorAll(selector);
+//                console.log(doms)
+            jQuery.extend(this,doms);
+            jQuery.extend(jQuery.init.prototype,jQuery.fn);
+            return this;
+        };
+
+        jQuery.init.prototype = {
+            addClass:function(){return this;},
+            hasClass:function(){return this;},
+            now:function(){return new Date().getTime();}
+        };
+        jQuery.fn = {test:function(){return this;}};
+
+        window.$ = window.jQuery = jQuery;
+    })(window,document);
+    
+    
+</script>
+</body>
+</html>

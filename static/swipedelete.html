@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <style>
+        @charset "utf-8";
+        /* CSS Document */
+        /*YUI reset*/
+        html,body{ height: 100%; }
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            list-style: none;
+        }
+        body{
+            /*height: 3000px;*/
+        }
+        article, aside, footer, header, hgroup, main, nav, section {
+            display: block;
+        }
+        button {
+            font: 14px/20px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+            cursor: pointer;
+            /*padding: 2px 8px;*/
+        }
+        input{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+        }
+        body{
+            word-wrap: break-word;
+            word-break:break-all;
+            padding: 0;
+            margin: 0;
+            background-color: #f1f1f1;
+            color: #404040;
+            font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+            outline: none;
+        }
+
+        a {
+            color: #404040;
+            cursor: pointer;
+            text-decoration: none;
+            outline: none;
+        }
+
+        div#iOSelect-container {
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #ac5bcc;
+        }
+        .items-box {
+            width: 100%;
+            border: 1px solid #606EB2;
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .items-box ul {
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            left: 0;
+            /*-webkit-transition:all 0.8s ease-out;*/
+        }
+        .items-box ul li{
+            height: 80px;
+            line-height: 80px;
+            border-bottom: 1px solid #C3C3C3;
+            position: relative;
+        }
+        .content-item {
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+        }
+        .delete-item {
+            height: 100%;
+            width: 80px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            text-align: center;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<div id="iOSelect-container" class="iOSelect-container">
+    <div class="items-box" id="items-box">
+        <ul id="select-ul">
+            <li>
+                <div class="content-item"><input type="checkbox" name=""  />1123434454545</div>
+                <div class="delete-item">删除</div>
+            </li>
+            <li>
+                <div class="content-item"><input type="checkbox" name=""  />1123434454545</div>
+                <div class="delete-item">删除</div>
+            </li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+            <li>07</li>
+            <li>08</li>
+            <li>09</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="../scripts/sea-modules/seajs/seajs/2.2.3/sea.js"></script>
+<script src="../scripts/sea-modules/sea-config.js"></script>
+<script>
+    seajs.use(['zepto'],function($){
+        var cssPrefix = $.fx.cssPrefix,
+            slideWidth = 80;
+        function translate(dom,endX,endY,duration,easeFn){
+            easeFn || (easeFn = "cubic-bezier(0,.66,.99,.97)");
+            dom.style.cssText += cssPrefix + 'transition-timing-function:'+easeFn+";"+
+                    cssPrefix + 'transition-duration:' + duration +'ms;' +
+                    cssPrefix + 'transform: translate3D('+endX +'px, '+endY+'px,0);' ;
+        }
+
+        function getTransPos(dom){
+            var res = window.getComputedStyle(dom).getPropertyValue(cssPrefix+"transform")||"",pos={x:0,y:0};
+            res = res.match(/([-0-9.]+,\s*[-0-9.]+)\)/);
+            if(res){
+                pos.x = +res[1].split(/,\s*/)[0];
+                pos.y = +res[1].split(/,\s*/)[1];
+            }
+            return pos;
+        }
+
+        var p= 0,delta = 0,touches = null,newEX=0,oldEX= 0,endV= 0,end_p= 0,oldTimeStamp= 0,startTimeStamp= 0,isMoved=false;
+        var judgeOldEX=0 ,judgeOldEY= 0,isJudged = false;
+        $("#select-ul").on("touchstart",".content-item",function(e){
+            isJudged = false;
+            $("#select-ul").off("touchend.modify touchmove.modify");
+            endV = 0;isMoved = false;
+            if($(this).attr('offsetLeft') == -slideWidth){
+                translate($(this)[0],0,end_p,160);
+                $(this).attr('offsetLeft',0);
+                p = 0;
+                isMoved = true;
+                return ;
+            }
+            $("#select-ul .content-item").each(function(){
+                var me = $(this);
+                if(me.attr("offsetLeft") == -slideWidth){
+                    translate($(this)[0],0,end_p,160);
+                    me.attr('offsetLeft',0);
+                }
+            });
+            touchEnd();
+            touchMove();
+            $(document).on("touchmove",function(e){
+                e.preventDefault();
+            });
+            p = getTransPos($(this)[0]).x;
+            touches = e.touches || e.originalEvent.touches ;
+            oldEX = touches[0].pageX;
+            oldTimeStamp = e.timeStamp;
+            startTimeStamp = e.timeStamp;
+            judgeOldEX = touches[0].pageX;
+            judgeOldEY = touches[0].pageY;
+        });
+
+        function touchMove(){
+            $("#select-ul").on("touchmove.modify",".content-item",function(e){
+                isMoved = true;
+                touches = e.touches || e.originalEvent.touches ;
+                if(!isJudged){
+                    var angle = Math.abs((touches[0].pageY-judgeOldEY)/(touches[0].pageX-judgeOldEX));
+                    if(angle>=1){
+                        $("#select-ul").off("touchmove.modify");
+                        $(document).off("touchmove");
+                        return;
+                    }
+                    else{
+                        isJudged = true;
+                    }
+                }
+                newEX = touches[0].pageX;
+                delta = newEX - oldEX;
+                if(delta > 0 && p>=0){
+                    p = 0;
+                    return;
+                }
+                if(p<-slideWidth){
+                    p += delta/2.6;
+                }
+                else{
+                    p += delta/1.4;
+                }
+                translate($(this)[0],p,end_p,0,"linear");
+                oldEX = newEX;
+                endV = delta/(e.timeStamp - oldTimeStamp);
+                oldTimeStamp = e.timeStamp;
+            });
+        }
+
+
+        function touchEnd(){
+            var lastV = 0;
+            $("#select-ul").on("touchend.modify",".content-item",function(e){
+                console.log(endV)
+                $(document).off("touchmove");
+                touches = e.changedTouches || e.originalEvent.changedTouches ;
+                newEX = touches[0].pageX;
+                lastV = endV*100;
+                p += lastV;
+                if(p> -slideWidth*2/3){
+                    p = 0;
+                    $(this).attr('offsetLeft',p);
+                }
+                else if( p <= -slideWidth*2/3){
+                    p = -slideWidth;
+                    $(this).attr('offsetLeft',p);
+                }
+                oldEX = newEX;
+                translate($(this)[0],p,end_p,160);
+            });
+        }
+
+        /*$("#select-ul .content-item").tap(function(e){
+            if(endV ==0 && !isMoved){
+                alert(123456)
+            }
+
+        });
+        $("#select-ul .content-item input").tap(function(e){
+            e.stopPropagation()
+        });*/
+
+    });
+</script>
+</body>
+</html>

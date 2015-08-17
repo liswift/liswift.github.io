@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../styles/iOselect-style.css"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <style>
+        #haha{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*animation: moveStep 2s ease 0 1 normal forwards;*/
+            /*-webkit-animation: moveStep 2s ease 0 1 normal forwards;*/
+            /*-webkit-transition:transform 2s cubic-bezier(.37,.79,.76,1);*/
+            /*-webkit-transform:translate(200px,0)*/
+        }
+        #wrap{
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        /*@-webkit-keyframes moveStep{100%{left: 200px;}}*/
+
+    </style>
+</head>
+<body>
+<div id="wrap"><div id="haha"></div></div>
+
+<script>
+    var div = document.querySelector("#haha");
+    var translate = function(endX,endY,duration,easeFn){
+        var self = this;
+        var div = self.trigger;
+        easeFn || (easeFn = "cubic-bezier(.37,.79,.76,1)");
+        self.isMoving = true;
+        if(!self.isMoving){
+            endX = div.getBoundingClientRect().left;
+            endY = div.getBoundingClientRect().top;
+            div.style.webkitTransform = "translate("+endX+"px,"+endY+"px)";
+            return ;
+        }
+        div.style.webkitTransition = "transform "+duration+"s "+easeFn;
+        div.style.webkitTransform = "translate("+endX+"px,"+endY+"px)";
+    }
+</script>
+
+
+
+</body>
+</html>

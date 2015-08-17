@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+/*YUI reset*/
+html,body{ height: 100%; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+}
+body{
+    /*height: 3000px;*/
+}
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+button {
+    font: 14px/20px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+    cursor: pointer;
+    /*padding: 2px 8px;*/
+}
+input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+}
+body{
+    word-wrap: break-word;
+    word-break:break-all;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+    color: #404040;
+    font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    outline: none;
+}
+
+a {
+    color: #404040;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+div#iOSelect-container {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ac5bcc;
+}
+.items-box {
+    width: 100%;
+    border: 1px solid #606EB2;
+    position: relative;
+    height: 100px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.item-box {
+    height: 40px;
+    border: 1px solid #333;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -9px;
+    text-align: center;
+}
+.item-box ul {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    /*-webkit-transition:all 0.8s ease-out;*/
+}
+.item-box ul li{
+    height: 40px;
+    line-height: 40px;
+}
+

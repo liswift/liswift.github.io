@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #div{
+            width: 22px;
+            height: 22px;
+            border-radius: 22px;
+            background-color: purple;
+            margin: 0 auto;
+            position: relative;
+            left: -300px;
+            top: 500px
+        }
+        .hehe{
+            height: 500px;
+            border-left: 1px solid;
+            width: 1px;
+            position: absolute;
+            left: 1100px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="hehe"></div>
+<div id="div"></div>
+<button id="btn">click</button>
+<script>
+    var rAF = window.requestAnimationFrame	||
+            window.webkitRequestAnimationFrame	||
+            window.mozRequestAnimationFrame		||
+            window.oRequestAnimationFrame		||
+            window.msRequestAnimationFrame		||
+            function (callback) { window.setTimeout(callback, 1000 / 60); };
+
+    var div = document.querySelector("#div");
+    function move(endX,endY,duration,easeFn){
+         var startX = parseFloat(window.getComputedStyle(div,null).left) || 0,
+             startY = parseFloat(window.getComputedStyle(div,null).top) || 0,
+             startTime = new Date().getTime(),
+             endTime = startTime + duration;
+
+        function step(){
+            var currentTime = new Date().getTime();
+            var percent = (currentTime - startTime)/duration;
+            if(currentTime>endTime){
+                div.style.left = endX +"px";
+                div.style.top = endY+"px";
+                return;
+            }
+            var ease = easeFn(percent);
+            var currentX = (endX - startX)*ease[0],
+                currentY = (endX - startX)*ease[1];
+            div.style.transform = 'translate(' +currentX + 'px, '+currentY+'px)';
+
+            /*var currentX = (endX - startX)*ease[0]+startX,
+                currentY = (endY - startY)*ease[1]+startY;
+            div.style.left = currentX +"px";
+            div.style.top = currentY+"px";*/
+
+            rAF(step);
+        }
+        step();
+    }
+
+    function move2D(speedX,speedY,duration,easeFn){
+        var startX = parseFloat(window.getComputedStyle(div,null).left) || 0,
+                startY = parseFloat(window.getComputedStyle(div,null).top) || 0,
+                startTime = new Date().getTime(),
+                endTime = startTime + duration;
+
+        function step(){
+            var currentTime = new Date().getTime();
+            var percent = (currentTime - startTime)/duration;
+            if(currentTime>endTime){
+                return;
+            }
+            var ease = easeFn(percent);
+            var currentX = speedX*ease[0],
+                currentY = speedY*ease[1];
+            div.style.transform = 'translate(' +currentX + 'px, '+currentY+'px)';
+
+            /*var currentX = speedX*ease[0]+startX,
+                currentY = speedY*ease[1]+startY;
+            div.style.left = currentX +"px";
+            div.style.top = currentY+"px";*/
+            rAF(step);
+        }
+        step();
+    }
+
+    function easeFn(now){
+//        return -5*(Math.pow(now-0.6,2))+1.8;
+//        return Math.pow(now,1/5);
+
+        /*if(now <= 0.25){
+            return 16*now*now;
+        }
+        if(now <= 0.5){
+            return 32*Math.pow((now-0.375),2) + 0.5;
+        }
+        if(now <= 0.75){
+            return 16*Math.pow((now-0.625),2) + 0.75;
+        }
+        if(now <= 1){
+            return 8*Math.pow((now-0.875),2) + 0.875;
+        }*/
+
+        /*var resX = now,
+            resY = 0.5*Math.sin(Math.PI*(9*now));*/
+
+        /*var resX = Math.sin(Math.PI*2*now*2),
+            resY = 0.12*Math.cos(Math.PI*2*now*2);*/
+
+        var resX = now*3,
+            resY = -(Math.atan(4*(now-Math.PI/8)*Math.PI)+1.4698);
+
+        return [resX,resY];
+
+    }
+
+    var endX =  parseFloat(window.getComputedStyle(div,null).left)+600,
+        endY = parseFloat(window.getComputedStyle(div,null).top)+300;
+
+    var btn = document.querySelector("#btn");
+    btn.onclick = function(){
+        move(200,100,8000,easeFn);
+    }
+
+
+
+</script>
+</body>
+</html>
