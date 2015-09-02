@@ -1,50 +1,70 @@
-html,body{
-    margin:0;
-    padding:0;
-    height:100%;
-}
-iframe{
+@charset "utf-8";
+/* CSS Document */
+/*YUI reset*/
+html,body{ height: 100%; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,button {
+    margin: 0;
+    padding: 0;
     border: 0;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    z-index: -1;
-    transition:all 0.3s ease;
-    -webkit-transition:all 0.3s ease;
-    -moz-transition:all 0.3s ease;
-    -o-transition:all 0.3s ease;
+    outline: 0;
+    list-style: none;
 }
-iframe.swipe-iframe{
-    bottom: 0;
-    left: 50%;
-    margin-left: -25px;
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
 }
-iframe.swipe-iframe.focus{
-    left:0;
-    margin-left:0;
-    z-index: 10;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    
+button {
+    font: 14px/20px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+    cursor: pointer;
 }
-.swipe-iframe-btn{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 0;
-    left: 50%;
-    margin-left: -25px;
-    z-index: 1;
-    background: #ac7cff;
+input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
 }
-.option-nap{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    left: 0;
-    z-index: 99;
-    background: red;
+body{
+    min-width: 1200px;
+    word-wrap: break-word;
+    word-break:break-all;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+    color: #404040;
+    font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    color: #404040;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+i, em {
+    font-style: normal;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.clearfix {
+    clear: both;
+}
+/*end YUI reset*/
+
+
+
+

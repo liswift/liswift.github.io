@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Welcome to Lithe-Swift's site</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/index.css"/>
-    <title>lithe swift</title>
 </head>
 <body>
-<div id="option-nap" class="option-nap"></div>
-<div style="text-align: center">
-    <h2>hello world!</h2>
-    <br/>
-    <h>deploying...</h>
-</div>
-<div id="swipe-iframe-btn" class="swipe-iframe-btn"></div>
-<iframe id="swipe-iframe" class="swipe-iframe" src="/static/swipedelete.html" width="100%" height="200px"></iframe>
+
+
 
 <script  type="text/javascript" src="/scripts/sea-modules/seajs/seajs/2.2.3/sea.js"></script>
 <script  type="text/javascript" src="/scripts/sea-modules/sea-config.js"></script>
 <script>
     seajs.use(['jquery'],function($){
 
-        $("#swipe-iframe-btn").click(function(){
-            $("#swipe-iframe").toggleClass("focus");
-        });
-        $("#option-nap").click(function(){
-            $("iframe").removeClass("focus");
-        });
     });
 </script>
 </body>
