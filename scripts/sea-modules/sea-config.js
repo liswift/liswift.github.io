@@ -13,6 +13,7 @@
         "picSlider":'js/picSlider',
         "tranSprite":'js/tranSprite',
         "picScroller":'js/picScroller',
+        "picScroller1":'js/picScroller1',
         "zepto":'zepto/zepto'
 
     }
