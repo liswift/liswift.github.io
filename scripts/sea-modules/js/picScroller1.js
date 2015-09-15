@@ -1,4 +1,4 @@
-picScroll1.html/**
+/**
  * Created by biQuan on 15-5-25.
  */
 define(function(require,exports,module){
