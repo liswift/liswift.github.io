@@ -133,7 +133,7 @@ a {
     bottom: 0;
     left: 50%;
     margin-left: -13px;
-    background: url("../images/icon-scrolldown.png") center no-repeat;
+    background: url("/images/icon-scrolldown.png") center no-repeat;
     background-size: 100% auto;
     opacity: 0;
 }
@@ -151,7 +151,7 @@ a {
     top: 0;
     left: 50%;
     margin-left: -13px;
-    background: url("../images/icon-scrollup.png") center no-repeat;
+    background: url("/images/icon-scrollup.png") center no-repeat;
     background-size: 100% auto;
     opacity: 0;
 }

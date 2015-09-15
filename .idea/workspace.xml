@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/picScroll1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/scroll-style1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/sea-modules/sea-config.js" afterPath="$PROJECT_DIR$/scripts/sea-modules/sea-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon-scrolldown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon-scrollup.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scroll-style1.css" afterPath="$PROJECT_DIR$/styles/scroll-style1.css" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-0.691954" vertical-offset="1146" max-vertical-offset="2016">
+            <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="25.083334" vertical-offset="1146" max-vertical-offset="2016">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scroll-style1.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="21" selection-start="3542" selection-end="3542" vertical-scroll-proportion="-2.4143019" vertical-offset="4575" max-vertical-offset="5456">
               <folding />
             </state>
           </provider>
@@ -58,6 +63,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/sea-modules/sea-config.js" />
         <option value="$PROJECT_DIR$/static/picScroll1.html" />
+        <option value="$PROJECT_DIR$/styles/scroll-style1.css" />
       </list>
     </option>
   </component>
@@ -122,11 +128,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sea-modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -146,11 +180,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\gitProj\liswift.github.io\images" />
       <recent name="F:\gitProj\liswift.github.io" />
       <recent name="F:\gitProj\liswift.github.io\styles" />
       <recent name="F:\gitProj\liswift.github.io\static" />
       <recent name="F:\gitProj\liswift.github.io\scripts\sea-modules\js" />
-      <recent name="F:\gitProj\liswift.github.io\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -273,13 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.32690126" vertical-offset="288" max-vertical-offset="5456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="-1.0928411" vertical-offset="977" max-vertical-offset="3264">
@@ -310,7 +337,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-0.691954" vertical-offset="1146" max-vertical-offset="2016">
+        <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="25.083334" vertical-offset="1146" max-vertical-offset="2016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="21" selection-start="3542" selection-end="3542" vertical-scroll-proportion="-2.4143019" vertical-offset="4575" max-vertical-offset="5456">
           <folding />
         </state>
       </provider>
