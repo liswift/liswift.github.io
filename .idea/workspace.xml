@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="" />
+    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scroll-style1.css" afterPath="$PROJECT_DIR$/styles/scroll-style1.css" />
+    </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroll-style1.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scroll-style1.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="21" selection-start="3542" selection-end="3542" vertical-scroll-proportion="0.0" vertical-offset="4575" max-vertical-offset="5456">
+            <state line="13" column="1" selection-start="623" selection-end="623" vertical-scroll-proportion="0.23609534" vertical-offset="0" max-vertical-offset="5440">
               <folding />
             </state>
           </provider>
@@ -50,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="picScroller1.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="picScroller1.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.393736" vertical-offset="0" max-vertical-offset="3264">
+            <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
               <folding />
             </state>
           </provider>
@@ -76,8 +78,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/sea-modules/sea-config.js" />
         <option value="$PROJECT_DIR$/static/picScroll1.html" />
-        <option value="$PROJECT_DIR$/styles/scroll-style1.css" />
         <option value="$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js" />
+        <option value="$PROJECT_DIR$/styles/scroll-style1.css" />
       </list>
     </option>
   </component>
@@ -364,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="21" selection-start="3542" selection-end="3542" vertical-scroll-proportion="0.0" vertical-offset="4575" max-vertical-offset="5456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sea-modules/sea-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="21" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
@@ -380,7 +375,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.393736" vertical-offset="0" max-vertical-offset="3264">
+        <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="623" selection-end="623" vertical-scroll-proportion="0.23609534" vertical-offset="0" max-vertical-offset="5440">
           <folding />
         </state>
       </provider>
