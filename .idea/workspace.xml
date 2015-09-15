@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js" afterPath="$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js" />
-    </list>
+    <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="" />
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,7 +53,7 @@
       <file leaf-file-name="picScroller1.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="197" selection-end="197" vertical-scroll-proportion="0.12527964" vertical-offset="0" max-vertical-offset="3264">
+            <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.393736" vertical-offset="0" max-vertical-offset="3264">
               <folding />
             </state>
           </provider>
@@ -382,7 +380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="197" selection-end="197" vertical-scroll-proportion="0.12527964" vertical-offset="0" max-vertical-offset="3264">
+        <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.393736" vertical-offset="0" max-vertical-offset="3264">
           <folding />
         </state>
       </provider>
