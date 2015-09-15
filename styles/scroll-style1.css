@@ -111,6 +111,11 @@ a {
     -webkit-overflow-scrolling : touch;
     position: relative;
 }
+@media screen and (min-width: 800px) {
+    .banner-img-wrap li>div{
+        overflow: hidden;
+    }
+}
 .banner-img-wrap li iframe{
     width: 100%;
     height: 100%;
