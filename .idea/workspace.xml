@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scroll-style1.css" afterPath="$PROJECT_DIR$/styles/scroll-style1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/images/qins-bg-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/css/base.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/jjxq.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/jquery-debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/jrcsjj.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/jrcslc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/lcxq.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/listimg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/shxq.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/sp.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/wdxq.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/data/yywd.json" />
+      <change type="DELETED" beforePath="F:\gitProj\liswift.github.io\index1.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/seajs-index.html" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,37 +46,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="25.083334" vertical-offset="1146" max-vertical-offset="2016">
-              <folding />
+            <state line="11" column="7" selection-start="395" selection-end="395" vertical-scroll-proportion="0.20229885" vertical-offset="0" max-vertical-offset="870">
+              <folding>
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroll-style1.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+      <file leaf-file-name="base.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="0" selection-start="2493" selection-end="2594" vertical-scroll-proportion="0.35163552" vertical-offset="1507" max-vertical-offset="5488">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sea-config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sea-modules/sea-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="21" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="picScroller1.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
+            <state line="17" column="65" selection-start="810" selection-end="810" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="384">
               <folding />
             </state>
           </provider>
@@ -75,11 +80,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/styles/index.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/sea-modules/sea-config.js" />
         <option value="$PROJECT_DIR$/static/picScroll1.html" />
         <option value="$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js" />
         <option value="$PROJECT_DIR$/styles/scroll-style1.css" />
+        <option value="$PROJECT_DIR$/ng/js/app.js" />
+        <option value="$PROJECT_DIR$/ng/css/base.less" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -97,7 +104,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -134,74 +141,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sea-modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sea-modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liswift.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -215,14 +154,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\gitProj\liswift.github.io\ng\images" />
+      <recent name="F:\gitProj\liswift.github.io\ng\data" />
+      <recent name="F:\gitProj\liswift.github.io\ng\libs" />
       <recent name="F:\gitProj\liswift.github.io\images" />
       <recent name="F:\gitProj\liswift.github.io" />
-      <recent name="F:\gitProj\liswift.github.io\styles" />
-      <recent name="F:\gitProj\liswift.github.io\static" />
-      <recent name="F:\gitProj\liswift.github.io\scripts\sea-modules\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -251,7 +191,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -259,11 +199,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -291,46 +231,47 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index1.html">
+    <entry file="file://$PROJECT_DIR$/seajs-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="480">
+        <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="2016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="16" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0" vertical-offset="1507" max-vertical-offset="5488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sea-modules/sea-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sea-modules/js/picScroller1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="34" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="3264">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1488">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="480">
-          <folding />
-        </state>
+        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1488" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1488">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="58" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="560">
-          <folding />
-        </state>
+        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1488" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="640">
-          <folding />
-        </state>
+        <state line="33" column="18" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/select.html">
@@ -340,28 +281,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1488">
-          <folding />
-        </state>
+        <state line="26" column="22" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1488" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/picScroll1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.09195402" vertical-offset="432" max-vertical-offset="2016">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.09195402" vertical-offset="432" max-vertical-offset="2016" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index1.html">
+    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.4413793" vertical-offset="0" max-vertical-offset="870">
+        <state line="98" column="21" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.0692395" vertical-offset="1507" max-vertical-offset="5488">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sea-modules/sea-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
+        <state line="15" column="21" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.2724177" vertical-offset="0" max-vertical-offset="881">
           <folding />
         </state>
       </provider>
@@ -373,17 +310,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/ng/libs/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="25.083334" vertical-offset="1146" max-vertical-offset="2016">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="881">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/scroll-style1.css">
+    <entry file="file://$PROJECT_DIR$/ng/libs/angular-animate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="2493" selection-end="2594" vertical-scroll-proportion="0.35163552" vertical-offset="1507" max-vertical-offset="5488">
+        <state line="16" column="38" selection-start="439" selection-end="439" vertical-scroll-proportion="0.2905789" vertical-offset="0" max-vertical-offset="33888">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/libs/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="33104">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/libs/angular-ui-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="21" selection-start="861" selection-end="861" vertical-scroll-proportion="0.4474273" vertical-offset="0" max-vertical-offset="69920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/data/jjxq.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seajs-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="972" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="65" selection-start="810" selection-end="810" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="395" selection-end="395" vertical-scroll-proportion="0.20229885" vertical-offset="0" max-vertical-offset="870">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
