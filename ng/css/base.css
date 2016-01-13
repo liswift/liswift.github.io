@@ -138,6 +138,7 @@ body {
 }
 .login-box .form-item input {
   height: 1.8rem;
+  line-height: 1.8rem;
   width: 15.6rem;
   border-radius: 0.2rem;
   border: 0;

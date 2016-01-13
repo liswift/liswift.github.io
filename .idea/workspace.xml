@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/tpls/loginTpl.html" afterPath="$PROJECT_DIR$/ng/tpls/loginTpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.less" afterPath="$PROJECT_DIR$/ng/css/base.less" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,19 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginTpl.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="loginTpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ng/tpls/loginTpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.12873563" vertical-offset="0" max-vertical-offset="870">
+            <state line="7" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="256">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="24" selection-start="2355" selection-end="2355" vertical-scroll-proportion="-31.708334" vertical-offset="759" max-vertical-offset="1952">
+            <state line="69" column="27" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.5145858" vertical-offset="663" max-vertical-offset="1968">
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/ng/js/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/ng/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/ng/css/base.less" />
         <option value="$PROJECT_DIR$/ng/tpls/loginTpl.html" />
+        <option value="$PROJECT_DIR$/ng/css/base.less" />
       </list>
     </option>
   </component>
@@ -541,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="24" selection-start="2355" selection-end="2355" vertical-scroll-proportion="-31.708334" vertical-offset="759" max-vertical-offset="1952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="64" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="640">
@@ -557,7 +550,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ng/tpls/loginTpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.12873563" vertical-offset="0" max-vertical-offset="870">
+        <state line="7" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="27" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.5145858" vertical-offset="663" max-vertical-offset="1968">
           <folding />
         </state>
       </provider>
