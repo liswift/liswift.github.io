@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/libs/angular-route.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/js/directives/footer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/tpls/loginTpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/js/routes/route.js" />
-      <change type="DELETED" beforePath="F:\gitProj\liswift.github.io\ng\js\controllers\footerCtrl.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/js/controllers/app.js" afterPath="$PROJECT_DIR$/ng/js/controllers/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.css" afterPath="$PROJECT_DIR$/ng/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.less" afterPath="$PROJECT_DIR$/ng/css/base.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/js/main.js" afterPath="$PROJECT_DIR$/ng/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,19 +30,18 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="395" selection-end="395" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="320">
+            <state line="7" column="130" selection-start="351" selection-end="351" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="336">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+            <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.4116331" vertical-offset="0" max-vertical-offset="894">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1452651470085" expanded="true" signature="508:588" placeholder="{&quot;exports&quot;: 'angular-router'...}" />
               </folding>
             </state>
           </provider>
@@ -73,7 +64,6 @@
             <state line="6" column="22" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
-                <marker date="1452665102214" expanded="true" signature="139:353" placeholder="[...]" />
               </folding>
             </state>
           </provider>
@@ -88,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ng/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="28" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.5519253" vertical-offset="679" max-vertical-offset="1680">
+            <state line="11" column="12" selection-start="542" selection-end="542" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="1696">
               <folding />
             </state>
           </provider>
@@ -100,10 +90,9 @@
       <file leaf-file-name="route.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ng/js/routes/route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="30" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224">
+            <state line="7" column="33" selection-start="252" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
-                <marker date="1452652328624" expanded="true" signature="73:311" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -134,10 +123,10 @@
         <option value="$PROJECT_DIR$/ng/js/controllers/app.js" />
         <option value="$PROJECT_DIR$/ng/js/main.js" />
         <option value="$PROJECT_DIR$/ng/js/routes/route.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ng/js/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/ng/tpls/loginTpl.html" />
         <option value="$PROJECT_DIR$/ng/css/base.less" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -500,16 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1452651470085" expanded="true" signature="508:588" placeholder="{&quot;exports&quot;: 'angular-router'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ng/js/controllers/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="160">
@@ -519,29 +498,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/js/routes/route.js">
+    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <marker date="1452652328624" expanded="true" signature="73:311" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng/js/controllers/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <marker date="1452665102214" expanded="true" signature="139:353" placeholder="[...]" />
-          </folding>
+        <state line="11" column="12" selection-start="542" selection-end="542" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="1696">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="395" selection-end="395" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="320">
+        <state line="7" column="130" selection-start="351" selection-end="351" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="336">
           <folding />
         </state>
       </provider>
@@ -553,10 +519,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
+    <entry file="file://$PROJECT_DIR$/ng/js/routes/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="28" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.5519253" vertical-offset="679" max-vertical-offset="1680">
-          <folding />
+        <state line="7" column="33" selection-start="252" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/js/controllers/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.4116331" vertical-offset="0" max-vertical-offset="894">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
