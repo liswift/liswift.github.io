@@ -4,8 +4,6 @@
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.css" afterPath="$PROJECT_DIR$/ng/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.less" afterPath="$PROJECT_DIR$/ng/css/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="64" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4229885" vertical-offset="0" max-vertical-offset="870">
+            <state line="23" column="64" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="640">
               <folding />
             </state>
           </provider>
@@ -79,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="20" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-14.0" vertical-offset="208" max-vertical-offset="1728">
+            <state line="95" column="24" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.49591598" vertical-offset="1095" max-vertical-offset="1952">
               <folding />
             </state>
           </provider>
@@ -535,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="20" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-14.0" vertical-offset="208" max-vertical-offset="1728">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ng/tpls/loginTpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="52" selection-start="497" selection-end="521" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="256">
@@ -560,7 +551,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="64" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4229885" vertical-offset="0" max-vertical-offset="870">
+        <state line="23" column="64" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng/css/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="24" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.49591598" vertical-offset="1095" max-vertical-offset="1952">
           <folding />
         </state>
       </provider>

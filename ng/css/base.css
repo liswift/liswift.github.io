@@ -161,6 +161,18 @@ body {
   margin-top: 1.5rem;
   cursor: pointer;
 }
+@media (max-width: 750px) {
+  .login-box {
+    width: 17rem;
+    margin-left: -8.5rem;
+  }
+  .login-box .form-item input {
+    width: 13.3rem;
+  }
+  .login-box .submit-btn {
+    width: 14.3rem;
+  }
+}
 @-webkit-keyframes breath {
   30% {
     -webkit-transform: scale(1.02, 1.02) translateY(-0.2rem);
