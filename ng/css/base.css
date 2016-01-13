@@ -80,36 +80,36 @@ button {
 body {
   margin: 0;
   padding: 0;
-  min-width: 1006px;
-  min-height: 500px;
+  min-width: 15rem;
+  min-height: 25rem;
   word-wrap: break-word;
   word-break: break-all;
   color: #404040;
   position: relative;
-  font: 14px "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
+  font: 14/20rem "Microsoft YaHei", 'Hiragino Sans GB', arial, SimHei, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #f1f1f1 url("../images/qins-bg-jtm.jpg") center / cover repeat-y;
 }
 .footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 1.5rem;
   text-align: center;
   left: 0;
   width: 100%;
   color: #aaa;
-  font-size: 12px;
+  font-size: 0.6rem;
 }
 .login-box {
-  width: 386px;
-  height: 360px;
+  width: 19.3rem;
+  height: 18rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -200px;
-  margin-top: -180px;
-  padding: 26px;
+  margin-left: -10rem;
+  margin-top: -9rem;
+  padding: 1.3rem;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.2rem;
   -webkit-animation: breath 5s infinite;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: bottom center;
@@ -123,47 +123,47 @@ body {
   z-index: -1;
   opacity: .3;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 0.3rem;
 }
 .login-box p.form-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 1.3rem;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .login-box .form-item {
-  font-size: 16px;
+  font-size: 0.8rem;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .login-box .form-item input {
-  height: 36px;
-  width: 312px;
-  border-radius: 4px;
+  height: 1.8rem;
+  width: 15.6rem;
+  border-radius: 0.2rem;
   border: 0;
   outline-style: none;
-  padding: 0 10px;
+  padding: 0 0.5rem;
   background-color: #fff;
 }
 .login-box .form-item .tab-item {
   display: inline-block;
-  width: 15px;
+  width: 0.75rem;
 }
 .login-box .submit-btn {
   display: block;
   border: 0;
-  width: 332px;
-  height: 38px;
-  border-radius: 4px;
-  font-size: 16px;
+  width: 16.6rem;
+  height: 1.9rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
   color: #fff;
   background-color: #149FAB;
-  margin-top: 30px;
+  margin-top: 1.5rem;
   cursor: pointer;
 }
 @-webkit-keyframes breath {
   30% {
-    -webkit-transform: scale(1.02, 1.02) translateY(-4px);
+    -webkit-transform: scale(1.02, 1.02) translateY(-0.2rem);
   }
   60% {
     -webkit-transform: scale(1, 1);
