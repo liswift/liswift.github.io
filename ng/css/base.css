@@ -109,8 +109,10 @@ body {
   margin-top: -180px;
   padding: 26px;
   box-sizing: border-box;
+  border-radius: 4px;
   -webkit-animation: breath 5s infinite;
   -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: bottom center;
 }
 .login-box .mask {
   width: 100%;
@@ -161,7 +163,7 @@ body {
 }
 @-webkit-keyframes breath {
   30% {
-    -webkit-transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02) translateY(-4px);
   }
   60% {
     -webkit-transform: scale(1, 1);

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.css" afterPath="$PROJECT_DIR$/ng/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.less" afterPath="$PROJECT_DIR$/ng/css/base.less" />
     </list>
     <ignored path="liswift.github.io.iws" />
@@ -79,7 +80,7 @@
       <file leaf-file-name="base.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="20" selection-start="1793" selection-end="1793" vertical-scroll-proportion="0.5974329" vertical-offset="624" max-vertical-offset="1696">
+            <state line="45" column="26" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.12252042" vertical-offset="615" max-vertical-offset="1728">
               <folding />
             </state>
           </provider>
@@ -557,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ng/css/base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="20" selection-start="1793" selection-end="1793" vertical-scroll-proportion="0.5974329" vertical-offset="624" max-vertical-offset="1696">
+        <state line="45" column="26" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.12252042" vertical-offset="615" max-vertical-offset="1728">
           <folding />
         </state>
       </provider>
