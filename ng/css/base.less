@@ -29,3 +29,72 @@ body{
   color: #aaa;
   font-size: 12px;
 }
+.login-box{
+  width: 386px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -180px;
+  padding: 26px;
+  box-sizing: border-box;
+  -webkit-animation:breath 5s infinite;
+  -webkit-font-smoothing: antialiased;
+  .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .3;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  p.form-title {
+    text-align: center;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .form-item {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    input{
+      height: 36px;
+      width: 312px;
+      border-radius: 4px;
+      border: 0;
+      font-size: 16px;
+      outline-style: none;
+      padding: 0 10px;
+      background-color: #fff;
+    }
+    .tab-item{
+      display: inline-block;
+      width: 15px;
+    }
+  }
+  .submit-btn{
+    display: block;
+    border: 0;
+    width: 332px;
+    height: 38px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #149FAB;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+@-webkit-keyframes breath{
+  30%{
+    -webkit-transform:scale(1.02,1.02);
+  }
+  60%{
+    -webkit-transform:scale(1,1);
+  }
+}

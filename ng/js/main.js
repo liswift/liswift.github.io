@@ -9,16 +9,25 @@ require.config({
     paths: {
         "jquery": "libs/jquery203",
         "angular" : "libs/angular.min",
-        "router" : "libs/angular-ui-router.min",
-        "app" : "js/controllers/app"
+        "angular-router" : "libs/angular-route.min",
+        "app" : "js/controllers/app",
+        "myfooter" : "js/directives/footer",
+        "loginCtrl" : "js/controllers/loginCtrl",
+        "route" : "js/routes/route"
     },
     shim: {
-
+        angular:{
+            exports:'angular'
+        },
+        'angular-router':{
+            deps: ["angular"],
+            exports: 'angular-router'
+        }
     }
 });
 
 
-require(['jquery','angular'],function ($,angular){
+require(['jquery','angular','angular-router','app','myfooter',"loginCtrl",'route'],function ($,angular){
     $(function () {
         angular.bootstrap(document,["testApp"]);
     })
