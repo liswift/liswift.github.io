@@ -12,7 +12,7 @@ require.config({
         "angular-router" : "libs/angular-route.min",
         "app" : "js/controllers/app",
         "myfooter" : "js/directives/footer",
-        "loginCtrl" : "js/controllers/loginCtrl",
+        "loginCtrl" : "js/controllers/login-ctrl",
         "route" : "js/routes/route"
     },
     shim: {

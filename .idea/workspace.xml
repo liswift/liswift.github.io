@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be58508f-f62f-4580-a849-d82201ec9cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.css" afterPath="$PROJECT_DIR$/ng/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/css/base.less" afterPath="$PROJECT_DIR$/ng/css/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng/js/controllers/login-ctrl.js" />
+      <change type="DELETED" beforePath="F:\gitProj\liswift.github.io\ng\js\controllers\LoginCtrl.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng/js/main.js" afterPath="$PROJECT_DIR$/ng/js/main.js" />
     </list>
     <ignored path="liswift.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.4116331" vertical-offset="0" max-vertical-offset="894">
+            <state line="14" column="50" selection-start="369" selection-end="369" vertical-scroll-proportion="0.25055927" vertical-offset="0" max-vertical-offset="894">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -58,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng/js/controllers/loginCtrl.js">
+      <file leaf-file-name="login-ctrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng/js/controllers/login-ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+            <state line="12" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -121,12 +121,12 @@
         <option value="$PROJECT_DIR$/ng/js/directives/footer.js" />
         <option value="$PROJECT_DIR$/ng/js/controllers/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/ng/js/controllers/app.js" />
-        <option value="$PROJECT_DIR$/ng/js/main.js" />
         <option value="$PROJECT_DIR$/ng/js/routes/route.js" />
         <option value="$PROJECT_DIR$/ng/js/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/ng/tpls/loginTpl.html" />
         <option value="$PROJECT_DIR$/ng/css/base.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/ng/js/main.js" />
       </list>
     </option>
   </component>
@@ -209,12 +209,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="liswift.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base.less" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+              <option name="myItemId" value="ng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -528,9 +546,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng/js/controllers/loginCtrl.js">
+    <entry file="file://$PROJECT_DIR$/ng/js/controllers/login-ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+        <state line="12" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
@@ -539,7 +557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ng/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="578" selection-end="578" vertical-scroll-proportion="0.4116331" vertical-offset="0" max-vertical-offset="894">
+        <state line="14" column="50" selection-start="369" selection-end="369" vertical-scroll-proportion="0.25055927" vertical-offset="0" max-vertical-offset="894">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
