@@ -13,6 +13,7 @@ require.config({
         "app" : "js/controllers/app",
         "myfooter" : "js/directives/footer",
         "loginCtrl" : "js/controllers/login-ctrl",
+        "qinsCtrl" : "js/controllers/qins-ctrl",
         "route" : "js/routes/route"
     },
     shim: {
@@ -27,7 +28,7 @@ require.config({
 });
 
 
-require(['jquery','angular','angular-router','app','myfooter',"loginCtrl",'route'],function ($,angular){
+require(['jquery','angular','angular-router','app','myfooter',"loginCtrl",'qinsCtrl','route'],function ($,angular){
     $(function () {
         angular.bootstrap(document,["testApp"]);
     })

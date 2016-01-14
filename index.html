@@ -14,10 +14,8 @@
                     recalc = function () {
                         var view_width = top.window.document.getElementsByTagName('html')[0].getBoundingClientRect().width;
                         var _html = document.getElementsByTagName('html')[0];
-
                         view_width > $width/2 ? _html.style.fontSize = '20px' : _html.style.fontSize = view_width / ($width/40) + 'px';
                         document.querySelector('body').setAttribute('size', view_width+''+$width/2  );
-
                     };
             if (!doc.addEventListener) return;
             win.addEventListener(resizeEvt, recalc, false);
@@ -29,6 +27,7 @@
 </head>
 <body>
 <div ng-view></div>
+<a href="#/qins-1">秦时明月</a>
 <myfooter></myfooter>
 <script data-main="ng/js/main.js" src="ng/libs/require.js"></script>
 </body>

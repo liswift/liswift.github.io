@@ -6,6 +6,9 @@ define(['app'],function(testApp){
         $routeProvider.when('/',{
             templateUrl:'ng/tpls/loginTpl.html',
             controller:'LoginCtrl'
+        }).when('/qins-1',{
+            templateUrl:'ng/tpls/qins-1.html',
+            controller:'QinsCtrl'
         }).otherwise({redirectTo:'/'})
     }])
 });

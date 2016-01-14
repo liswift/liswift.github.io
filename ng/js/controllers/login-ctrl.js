@@ -12,5 +12,10 @@ define(['jquery','angular','app'],function($,angular,testApp){
         $scope.submit = function(){
 
         }
+        $scope.ifValid = function(name){
+            if(!$scope[name]){
+
+            }
+        }
     }]);
 });

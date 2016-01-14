@@ -1,5 +1,4 @@
-html,
-body {
+html {
   height: 100%;
 }
 ul,
@@ -82,6 +81,7 @@ body {
   padding: 0;
   min-width: 15rem;
   min-height: 25rem;
+  min-height: 100%;
   word-wrap: break-word;
   word-break: break-all;
   color: #404040;
@@ -147,6 +147,10 @@ body {
   padding: 0 0.5rem;
   background-color: #fff;
 }
+.login-box .form-item input.invalid-input {
+  box-shadow: 0 0 1px 1px #ea5550;
+  -webkit-animation: invalid 0.3s ease;
+}
 .login-box .form-item .tab-item {
   display: inline-block;
   width: 0.75rem;
@@ -182,4 +186,25 @@ body {
   60% {
     -webkit-transform: scale(1, 1);
   }
+}
+@-webkit-keyframes invalid {
+  25% {
+    -webkit-transform: translateX(0.05rem);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-0.05rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+article.qins-box {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  opacity: .9;
+  min-height: 1000px;
 }

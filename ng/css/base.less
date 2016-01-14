@@ -1,4 +1,4 @@
-html,body{
+html{
   height: 100%;
 }
 ul,div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,button {
@@ -13,6 +13,7 @@ body{
   padding: 0;
   min-width: 300/20rem;
   min-height: 500/20rem;
+  min-height: 100%;
   word-wrap: break-word;
   word-break:break-all;
   color: #404040;
@@ -21,6 +22,7 @@ body{
   -webkit-font-smoothing: antialiased;
   background: #f1f1f1 url("../images/qins-bg-jtm.jpg") center/cover repeat-y;
 }
+
 .footer{
   position: absolute;
   bottom: 30/20rem;
@@ -77,6 +79,10 @@ body{
       padding: 0 10/20rem;
       background-color: #fff;
     }
+    input.invalid-input{
+      box-shadow: 0 0 1px 1px #ea5550;
+      -webkit-animation:invalid 0.3s ease;
+    }
     .tab-item{
       display: inline-block;
       width: 15/20rem;
@@ -116,4 +122,26 @@ body{
   60%{
     -webkit-transform:scale(1,1);
   }
+}
+@-webkit-keyframes invalid{
+  25%{
+    -webkit-transform:translateX(1/20rem);
+  }
+  50%{
+    -webkit-transform:translateX(0);
+  }
+  75%{
+    -webkit-transform:translateX(-1/20rem);
+  }
+  100%{
+    -webkit-transform:translateX(0);
+  }
+}
+
+article.qins-box {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  opacity: .9;
+  min-height: 1000px;
 }
