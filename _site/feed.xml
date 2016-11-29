@@ -5,17 +5,18 @@
     <description>欢迎!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Nov 2016 16:49:05 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Nov 2016 16:49:05 +0800</lastBuildDate>
+    <pubDate>Tue, 29 Nov 2016 16:51:31 +0800</pubDate>
+    <lastBuildDate>Tue, 29 Nov 2016 16:51:31 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>开始</title>
         <description>&lt;p&gt;&lt;img src=&quot;/images/posts/something/new_beginning.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;博客终于搭建起来了。很早以前就想有一个博客，能记录自己在学习工作中的点滴。
+&lt;p&gt;
+&lt;p&gt;
+博客终于搭建起来了。很早以前就想有一个博客，能记录自己在学习工作中的点滴。
 总结一些技术要点，分享一些功能模块，分析一些项目问题，当然，还可以写一写随兴而起的东西。只要有网络，随时都能打开看。
-可就这么一个简单的想法，也会拖到现在才实现，真的需要反思一下！&lt;/p&gt;
+可就这么一个简单的想法，也会拖到现在才实现，真的需要反思一下！
 &lt;p&gt;
 一直以来的前端开发工作还是很充实的。新的需求下来后，开始讨论、构建项目，并着手写功能。在项目过程中，思考问题，解决问题，优化方案，
 每一个环节都能学到很多。有时候需要新的框架和语言，这充满未知和挑战，让人好奇而兴趣满满，于是便开始一段新的学习之旅。
@@ -28,7 +29,7 @@
 对接数据时，想着能不能自己写接口，写写后端逻辑；写App时，想着用原生写法会不会体验更好......有了想法才会有行动，付诸行动了，才能收获更多。
 &lt;p&gt;
 不要停下脚步，趁着自己还有一颗学习和折腾的心！
-&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 29 Nov 2016 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2016/11/start/</link>
