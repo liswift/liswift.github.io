@@ -5,15 +5,15 @@
     <description>欢迎!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Dec 2016 18:33:44 +0800</pubDate>
-    <lastBuildDate>Mon, 19 Dec 2016 18:33:44 +0800</lastBuildDate>
+    <pubDate>Mon, 19 Dec 2016 18:38:03 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Dec 2016 18:38:03 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>ECMA262笔记之'=='操作符</title>
         <description>&lt;p&gt;在一个帖子里，有人问过这样的一个问题：“js里，为什么1==true返回true，而2==true返回false？”当时自己的第一反应就是怎么可能，if(1)和if(2)都为true啊，2==true怎么会返回false。于是立刻打开console，急于向提问者证明“嗯，一定是你的打开方式不对！”结果自己打脸了！&lt;/p&gt;
 
-&lt;p&gt;怎么会这样？不行，我要弄清楚！于是查找相关解释，得出是类型隐式转换，可又没说清楚如何转换的，然后又查阅ECMA262文档，才搞清楚。&lt;/p&gt;
+&lt;p&gt;怎么会这样？不行，我要弄清楚！于是查找相关解释，涉及到类型隐式转换，可又没说清楚如何转换的，然后又查阅ECMA262文档，才搞清楚。&lt;/p&gt;
 
 &lt;h4 id=&quot;ecma262的第7213节-abstract-equality-comparison&quot;&gt;ECMA262的第7.2.13节 Abstract Equality Comparison：&lt;/h4&gt;
 &lt;p&gt;The comparison x == y, where x and y are values, produces true or false. Such a comparison is performed as follows:&lt;/p&gt;
