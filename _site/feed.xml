@@ -5,9 +5,116 @@
     <description>欢迎!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Nov 2016 17:03:44 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Nov 2016 17:03:44 +0800</lastBuildDate>
+    <pubDate>Mon, 19 Dec 2016 18:33:44 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Dec 2016 18:33:44 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>ECMA262笔记之'=='操作符</title>
+        <description>&lt;p&gt;在一个帖子里，有人问过这样的一个问题：“js里，为什么1==true返回true，而2==true返回false？”当时自己的第一反应就是怎么可能，if(1)和if(2)都为true啊，2==true怎么会返回false。于是立刻打开console，急于向提问者证明“嗯，一定是你的打开方式不对！”结果自己打脸了！&lt;/p&gt;
+
+&lt;p&gt;怎么会这样？不行，我要弄清楚！于是查找相关解释，得出是类型隐式转换，可又没说清楚如何转换的，然后又查阅ECMA262文档，才搞清楚。&lt;/p&gt;
+
+&lt;h4 id=&quot;ecma262的第7213节-abstract-equality-comparison&quot;&gt;ECMA262的第7.2.13节 Abstract Equality Comparison：&lt;/h4&gt;
+&lt;p&gt;The comparison x == y, where x and y are values, produces true or false. Such a comparison is performed as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If Type(x) is the same as Type(y), then
+Return the result of performing Strict Equality Comparison x === y.&lt;/li&gt;
+  &lt;li&gt;If x is null and y is undefined, return true.&lt;/li&gt;
+  &lt;li&gt;If x is undefined and y is null, return true.&lt;/li&gt;
+  &lt;li&gt;If Type(x) is Number and Type(y) is String, return the result of the comparison x == ToNumber(y).&lt;/li&gt;
+  &lt;li&gt;If Type(x) is String and Type(y) is Number, return the result of the comparison ToNumber(x) == y.&lt;/li&gt;
+  &lt;li&gt;If Type(x) is Boolean, return the result of the comparison ToNumber(x) == y.&lt;/li&gt;
+  &lt;li&gt;If Type(y) is Boolean, return the result of the comparison x == ToNumber(y).&lt;/li&gt;
+  &lt;li&gt;If Type(x) is either String, Number, or Symbol and Type(y) is Object, return the result of the comparison x == ToPrimitive(y).&lt;/li&gt;
+  &lt;li&gt;If Type(x) is Object and Type(y) is either String, Number, or Symbol, return the result of the comparison ToPrimitive(x) == y.&lt;/li&gt;
+  &lt;li&gt;Return false.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;也即：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如果x和y类型相同，返回用全等号===比较的结果；&lt;/li&gt;
+  &lt;li&gt;x是null而y是undefined时，返回true；&lt;/li&gt;
+  &lt;li&gt;x是undefined而y是null时，返回true；&lt;/li&gt;
+  &lt;li&gt;x是Number类型而y是String类型时，y转换成Number类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;x是String类型而y是Number类型时，x转换成Number类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;x是Boolean类型时（y类型不限），x转换成Number类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;y是Boolean类型时（x类型不限），y转换成Number类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;x是String，Number，Symbol 之一而y是Object时，将y转换成基础类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;x是Object而y是String，Number，Symbol 之一时，将x转换成基础类型后，返回x==y的结果；&lt;/li&gt;
+  &lt;li&gt;其它情况返回false。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;根据这个比较规则，我们来分析下面这些把人整蒙的比较式（尽管在实际代码中几乎很少用到）：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、undefined == null; // ??
+2、1 == true;         // ??
+3、2 == true;   		// ??
+4、0 == false;  		// ??
+5、0 == '';     		// ??
+6、NaN == NaN;  		// ??
+7、[] == false; 		// ??
+8、[] == ![];   		// ??
+9、{} == false			// ??
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;符合规则3，返回true；&lt;/li&gt;
+  &lt;li&gt;符合规则7，变成1==Number(true)，Number(true)结果是1，所以变成1==1，符合规则1，返回1===1，即true；&lt;/li&gt;
+  &lt;li&gt;符合规则7，变成2==Number(true)，Number(true)结果是1，所以变成2==1，符合规则1，返回2===1，即false；&lt;/li&gt;
+  &lt;li&gt;符合规则7，变成0==Number(false)，Number(false)结果是0，所以变成0==0，符合规则1，返回0===0，即true；&lt;/li&gt;
+  &lt;li&gt;符合规则4，变成0==Number(‘’)，Number(‘‘)结果是0，所以变成0==0，符合规则1，返回0===0，即true；&lt;/li&gt;
+  &lt;li&gt;NaN是Number类型，符合情况1，返回NaN===NaN，即false；&lt;/li&gt;
+  &lt;li&gt;符合规则7，变成[]==Number(false)，Number(false)结果是0，所以变成[]==0，符合规则9，返回ToPrimitive([])==0，ToPrimitive([])结果是”“，所以变成””==0，符合规则5，返回Number(“”)==0，Number(““)结果是0，所以变成0==0，符合规则1，返回0===0，即true；&lt;/li&gt;
+  &lt;li&gt;![]变成!Boolean([])，即是!true，即false，变成[]==false，同第7条；&lt;/li&gt;
+  &lt;li&gt;符合规则7，变成{}==Number(false)，Number(false)结果是0，所以变成{}==0，符合规则9，返回ToPrimitive({})==0，ToPrimitive({})结果是”[object Object]”，所以变成”[object Object]”==0，符合规则5，返回Number(“[object Object]”)==0，即NaN==0，符合规则1，返回NaN===0，即false。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这一趟分析下来，算是搞清楚了。&lt;code class=&quot;highlighter-rouge&quot;&gt;这里需要注意几点&lt;/code&gt;：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;文档中的ToPrimitive()、ToNumber()方法是更底层的方法，我们在代码中是不能使用的，不过在判断时，ToPrimitive()可以用我们熟知的类型转换规则替代（即根据情况调用对象的toString和valueOf方法）；ToNumber()可以用Number()方法替代（Number()方法内部就是用ToNumber()实现的）；&lt;/li&gt;
+  &lt;li&gt;ToPrimitive()默认转换成Number基础类型；&lt;/li&gt;
+  &lt;li&gt;文档中的Type()方法，我们在判断时可以用typeof替代；&lt;/li&gt;
+  &lt;li&gt;隐式类型转换使用Number()、String()和Boolean()来转换成所需类型，这三者本身的转换规则同样可以在文档中找到，相对比较好记。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;拓展&quot;&gt;拓展&lt;/h4&gt;
+&lt;p&gt;了解了”==”比较操作符的执行规则后，我们可以联想到其它的操作符，比如加减乘除操作符的执行规则，这些同样可以在ECMAScript文档中找到。&lt;code class=&quot;highlighter-rouge&quot;&gt;其中比较特殊的是&quot;+&quot;操作符，因为它可以用于字符串的拼接&lt;/code&gt;。看下面的例子：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、({}+&quot;&quot;) //&quot;[object Object]&quot;
+2、{}+&quot;&quot;   //0
+3、[]+&quot;&quot;   //&quot;&quot;
+4、([]+&quot;&quot;) //&quot;&quot;
+5、[]+{}   //&quot;[object Object]&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;根据文档中加法运算符的规则，可以轻松得出上面的结果。不过&lt;code class=&quot;highlighter-rouge&quot;&gt;要注意的坑&lt;/code&gt;是：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;1和2结果不同是{}的作用和()的作用导致的。不加小括号时,{}会认为}是声明的结尾，于是变成+“”，结果就是0；加了小括号后，({}+“”)变成一个表达式，变成“对象{}和空字符串的和”；&lt;/li&gt;
+  &lt;li&gt;[]没有表示声明的作用，所以不管在前在后都是“对象[]和空字符串的和”。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;参考&quot;&gt;参考&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tc39.github.io/ecma262/#sec-abstract-equality-comparison&quot;&gt;ecma262/#sec-abstract-equality-comparison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tc39.github.io/ecma262/#sec-addition-operator-plus&quot;&gt;ecma262/#sec-addition-operator-plus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 19 Dec 2016 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/12/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8B==%E6%93%8D%E4%BD%9C%E7%AC%A6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8B==%E6%93%8D%E4%BD%9C%E7%AC%A6/</guid>
+        
+        <category>技术</category>
+        
+        
+      </item>
     
       <item>
         <title>开始</title>
