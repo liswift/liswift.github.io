@@ -5,9 +5,110 @@
     <description>欢迎!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Dec 2016 18:50:38 +0800</pubDate>
-    <lastBuildDate>Mon, 19 Dec 2016 18:50:38 +0800</lastBuildDate>
+    <pubDate>Mon, 02 Jan 2017 16:40:54 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 16:40:54 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>ECMA262笔记之=&gt;箭头函数</title>
+        <description>&lt;p&gt;ES6之前，我们定义函数的方式通常是这样的：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var normalFunc =  function(){
+    return this;
+};
+
+//或者
+function normalFunc(){
+    return this;
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ES6引入了一种新的函数：箭头函数。是这样定义的：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var arrowFunc = ()=&amp;gt;{
+    return this;
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;箭头函数的定义方式就不多说了，使用方法和效果与普通函数基本一样。不过两者函数内部的this的指向却是不同的。这也是两者很重要的区别。看看下面的例子：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var obj = {
+    getThis1:function(){
+        console.log(this);
+    },
+    getThis2:()=&amp;gt;{
+        console.log(this);
+    }
+};
+
+//1
+obj.getThis1(); //obj对象
+
+//2
+var getThis1 = obj.getThis1;
+getThis1(); //undefiend
+
+//3
+new getThis1();//getThis1实例对象
+
+//4
+obj.getThis2(); //window对象
+
+//5
+var getThis2 = obj.getThis2;
+getThis2(); //window对象
+
+//6
+new getThis2();//报错:getThis2不是构造函数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中的一些结果，最初让我感到意外。当然也是因为自己没有查看文档，不了解。&lt;code class=&quot;highlighter-rouge&quot;&gt;ECMA262的第14.2.16节的NOTE&lt;/code&gt;：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+An ArrowFunction does not define local bindings for arguments, super, this, or new.target.
+Any reference to arguments, super, this, or new.target within an ArrowFunction must
+resolve to a binding in a lexically enclosing environment. Typically this will be the
+Function Environment of an immediately enclosing function.
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;可以看到，箭头函数本身不会为this以及另外几种变量定义局部绑定关系，当在箭头函数内部调用这些变量时，变量会绑定到最靠近的外层上下文环境。结合&lt;code class=&quot;highlighter-rouge&quot;&gt;mozilla开发文档&lt;/code&gt;的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&quot;&gt;Arrow functions&lt;/a&gt;章节的一段描述：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+Until arrow functions, every new function defined its own this value (a new object in the case of a constructor,
+undefined in strict mode function calls,the context object if the function is called as an &quot;object method&quot;, etc.).
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;根据我的测试，有如下结果：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 如果箭头函数外层本身也是箭头函数，那么this、arguments等会往更外层绑定。并且，箭头函数内部的this没有&quot;指向调用函数的对象&quot;这样的规则;
+2. 由于箭头函数任何时候都不创建自身的上下文this，所以通过call和apply是无法将箭头函数内的this指向其它对象的。
+3. 箭头函数不是构造函数constructor，所以不能用new实例化。
+4. 对于普通函数，如果是直接调用(不是通过new或者object.xx的方法调用)，那么内部this是undefined。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;参考&quot;&gt;参考&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tc39.github.io/ecma262/#sec-arrow-function-definitions-runtime-semantics-evaluation&quot;&gt;ecma262/#sec-arrow-function-definitions-runtime-semantics-evaluation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&quot;&gt;Arrow functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 02 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/01/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8B=-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8B=-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</guid>
+        
+        <category>技术</category>
+        
+        
+      </item>
     
       <item>
         <title>ECMA262笔记之'=='操作符</title>
