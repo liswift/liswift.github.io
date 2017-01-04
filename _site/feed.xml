@@ -5,9 +5,121 @@
     <description>欢迎!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Jan 2017 16:40:54 +0800</pubDate>
-    <lastBuildDate>Mon, 02 Jan 2017 16:40:54 +0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 18:34:37 +0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 18:34:37 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>ECMA262笔记之class语法</title>
+        <description>&lt;p&gt;之前在用ReactNative开发App时，经常接触到class语法。比如Image组件：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'use strict';
+
+const ImageResizeMode = require('ImageResizeMode');
+const React = require('React');
+const {Component} = React;
+
+class Image extends Component {
+  static get resizeMode() {
+    return ImageResizeMode;
+  }
+  render() {
+    const {children, ...props} = this.props;
+    return React.createElement('Image', props, children);
+  }
+}
+
+module.exports = Image;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;这是es6加入的class语法。从语法结构上看像是面向对象语言的类，不过这里的class可不是真正意义上的类，至少目前不是。随着javascript语言的发展，es6新语法会逐渐普及。将来我们会越来越普遍的使用这样的语法形式。在搭建基于reactjs的应用时，借助第三方插件babel-loader，我们已经可以使用class语法、箭头函数等新的语法去实现功能模块了。&lt;/p&gt;
+
+&lt;p&gt;class语法的body部分可以定义一些方法和属性。这些方法属于&lt;code class=&quot;highlighter-rouge&quot;&gt;方法定义（Method definitions）&lt;/code&gt;，是一种定义函数方法的简化语法。&lt;code class=&quot;highlighter-rouge&quot;&gt;Method definitions&lt;/code&gt;通常的写法是：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var obj = {
+  foo() {
+
+  },
+  bar() {
+
+  }
+};
+
+ //可以动态创建变量名
+var bar = {
+  get title() {},
+  set title(value) {},
+  foo1(){return 1;},
+  [&quot;foo&quot; + 2](){return 2;},
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;这种方式定义的方法不是构造函数，不能通过new调用。其中的动态定义变量名实在是有趣,可以满足某些特殊需求！另外，&lt;code class=&quot;highlighter-rouge&quot;&gt;get property() {}&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;set property(value) {}&lt;/code&gt;定义的其实是属性而不是方法，只是这些属性在使用时，会执行对应的方法来返回或设置值，在使用时仍然是采用&lt;code class=&quot;highlighter-rouge&quot;&gt;obj.title&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;obj.title = “title”&lt;/code&gt;来获取和设置。&lt;/p&gt;
+
+&lt;p&gt;总结一下&lt;strong&gt;class语法的一些特点&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;class语法并不是引入像其他语言那样的面向对象的模型，他只是js原型链的语法糖，是为了更简单清晰的创建对象和处理继承关系。&lt;/li&gt;
+  &lt;li&gt;class语法的声明类似function语法，但是用“声明方式”创建的class对象不能重复声明；而表达式方式创建的class可以重新赋值。&lt;/li&gt;
+  &lt;li&gt;类的静态方法不能被实例化，也不能被类的实例调用。&lt;/li&gt;
+  &lt;li&gt;class语法不会将声明语句“提前至执行语句之前”（hoisting，实际上预编译也不会真的将声明移至执行语句之前，只是把它们预先放进内存里），所以先使用后声明的做法行不通。&lt;/li&gt;
+  &lt;li&gt;class里的方法不是构造方法，不能new。&lt;/li&gt;
+  &lt;li&gt;class里的constructor方法是构造器，class实例化时会调用这个构造器，起到初始化的作用，类似python类的__init__方法。&lt;/li&gt;
+  &lt;li&gt;class声明的对象只能通过new方式调用，不能直接调用。&lt;/li&gt;
+  &lt;li&gt;class对象里的方法，如果是直接调用（不是通过object.xx()的方式调用），那么方法内部的this时undefined。这和普通函数对象不太一样。看下面的例子：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/***class语法的方法内部this指向***/
+class Animal {
+  speak() {
+    return this;
+  }
+  static eat() {
+    return this;
+  }
+}
+let obj = new Animal();
+let speak = obj.speak;
+obj.speak(); //Animal's instance
+speak(); // undefined
+
+let eat = Animal.eat;
+eat(); // undefined
+
+/***function语法的方法内部this指向***/
+function Animal() { }
+Animal.prototype.speak = function(){
+  return this;
+}
+Animal.eat = function() {
+  return this;
+}
+let obj = new Animal();
+let speak = obj.speak;
+speak(); // global object
+
+let eat = Animal.eat;
+eat(); // global object
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这里有个问题：普通函数的原型链方式也能写出模块化的结构，而class语法完成的工作看上去也差不多，那为什么要用class语法呢？我觉得class语法在构建对象上更加清晰明了，比如静态方法有&lt;strong&gt;&lt;em&gt;static&lt;/em&gt;&lt;/strong&gt;关键标识；有cunstructor方法初始化对象，不用再手动定义一个初始化方法；还可以使用&lt;strong&gt;&lt;em&gt;Method definitions&lt;/em&gt;&lt;/strong&gt;来定义属性等。最后，class语法看上去很像面向对象语言的类，使用这样的写法，或许有助于培养面向对象的思维习惯。&lt;/p&gt;
+
+&lt;h4 id=&quot;参考&quot;&gt;参考&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes&quot;&gt;Classes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions&quot;&gt;Method definitions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 04 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/01/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8Bclass%E8%AF%AD%E6%B3%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/ECMA262%E7%AC%94%E8%AE%B0%E4%B9%8Bclass%E8%AF%AD%E6%B3%95/</guid>
+        
+        <category>技术</category>
+        
+        
+      </item>
     
       <item>
         <title>ECMA262笔记之=&gt;箭头函数</title>
@@ -67,21 +179,17 @@ new getThis2();//报错:getThis2不是构造函数
 
 &lt;p&gt;其中的一些结果，最初让我感到意外。当然也是因为自己没有查看文档，不了解。&lt;code class=&quot;highlighter-rouge&quot;&gt;ECMA262的第14.2.16节的NOTE&lt;/code&gt;：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-An ArrowFunction does not define local bindings for arguments, super, this, or new.target.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;An ArrowFunction does not define local bindings for arguments, super, this, or new.target.
 Any reference to arguments, super, this, or new.target within an ArrowFunction must
 resolve to a binding in a lexically enclosing environment. Typically this will be the
 Function Environment of an immediately enclosing function.
-```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;可以看到，箭头函数本身不会为this以及另外几种变量定义局部绑定关系，当在箭头函数内部调用这些变量时，变量会绑定到最靠近的外层上下文环境。结合&lt;code class=&quot;highlighter-rouge&quot;&gt;mozilla开发文档&lt;/code&gt;的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions&quot;&gt;Arrow functions&lt;/a&gt;章节的一段描述：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-Until arrow functions, every new function defined its own this value (a new object in the case of a constructor,
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Until arrow functions, every new function defined its own this value (a new object in the case of a constructor,
 undefined in strict mode function calls,the context object if the function is called as an &quot;object method&quot;, etc.).
-```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
